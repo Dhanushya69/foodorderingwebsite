@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodorderingwebsite</title>
+    <link rel="preconnec t" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="maincss.css">
+    <!-- font awesome icon getting -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+        <!-- navbar content -->
+     <nav class="navbar">
+        <div class="nav">
+            <img src="images/logo.png" class="img">
+            <ul class="list">
+                <li><a href="#">signup</a></li>
+                <li><a href="#" id="openLogin">login</a></li>
+                <li><a href="#footer">contact</a></li>
+                <li><a href="#restaurants">menu</a></li>
+                <li><a href="#"  id="viewCartLink">cart</a></li>
+            </ul>
+            <div class="navextra">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search restaurents, cuisine...">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                
+            </div>
+            
+              
+        </div>
+
+     </nav>
+    <!--  navbar content -->
+   <!--  main content -->
+   <main id="main">
+    <div class="maincontent">
+        <h1 class="eat">Eat the best</h1>
+        <p class="explore">Explore and understand the culture more by tasting the amazing sishes of that culture</p>
+        <div class="location">
+            <input type="text" list="loca" class="loc" placeholder="Select place...">
+            <datalist id="loca">
+                <option value="Anna Nagar"></option>
+                <option value="Tambaram"></option>
+                <option value="ponamalle"></option>
+                <option value="Adyar"></option>
+    
+
+
+            </datalist>
+            <a href="#" class="search-btn"><i class="fa-solid fa-location-crosshairs"></i></a>
+        </div>
+        <div class="one-line">
+        <button  class="order">Eat food</button>
+        <p class="or">or</p>
+        <button class="order transperant">have cravings</button>
+        </div>
+
+    </div>
+    <div class="sideimgs">
+        <div class="background-ele">
+        <div class="elipse"></div> 
+        <div class="elipse"></div>
+        <div class="elipse"></div>
+        </div>
+        <div class="forgroundimg">
+
+            <img src="images/pizzas.png" class="foodimg">
+             <img src="images/bluberry.png" class="foodimg">
+            <img src="images/burgers.png" class="foodimg">
+            
+        </div>
+        <div class="review">
+            <div class="imgname">
+                <img src="images/mam.png" class="person">
+                <div class="ratename">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <p>4.5</p>
+                    </div>
+        
+                    <h3 class="aril">Arik</h3>
+                </div>
+            </div>
+            <div class="descrip">
+                <i class="fa-sharp fa-solid fa-quote-left"></i>
+                <p class="rev">The restaurent was good.staff was very welcoming and the food.... well no words for it chef was amazing and the view of the sky from the top deck was fabulous</p>
+            </div>
+        </div>
+    </div>
+   </main>
+    </header>
+
+    <!-- restaurents section -->
+<section id="section">
+    <div class="section">
+    <div class="imagesfoodcircle">
+     <img src="images/pla.png" class="imagerotate">
+     </div>
+    </div>
+    <div class="box">
+        <div class="chef">from professional chef</div>
+        <h1 class="num">1000+</h1>
+        <p class="line">order from our 1000+ food and beverages menu.food for every taste and mood.</p>
+        <button class="order">order food</button>
+
+    </div>
+    </div>
+
+</section>
+
+<!-- cards of foods -->
+<section id="restaurants">
+<div class="sixgrids">
+    <div class="display">
+        <div class="boxcard" onclick="changecolor(this);addToCart('cheesy pizza', 420)";>
+            <img src="images/hawaipizza.png">
+            <div class="floatcon">
+                <p class="promo">promoted</p>
+                <p class="percent">50% OFF</p>
+                <p class="time">38min</p>
+            </div>
+            <div class="padd">
+            <div class="resrat">
+            <h2 class="restaurent">cheesy creamy pizza</h2>
+            <p class="rate">4.9<i class="fa-solid fa-star"></i></p>
+            <p class="like"><i class="fa-regular fa-heart"></i></p>
+            </div>
+            <p class="des">creme deligt</p>
+            <p class="place">Rs420</p>
+            <button  class="order">order</button>
+            </div>
+    
+        </div>
+
+    <div class="boxcard" onclick="changecolor(this);addToCart('veggie pizza', 220)";>
+        <img src="images/vegpizza.png">
+        <div class="floatcon">
+           
+            <p class="percent">50% OFF</p>
+            <p class="time">40min</p>
+        </div>
+        <div class="padd">
+        <div class="resrat">
+        <h2 class="restaurent">Veggie Delight Fiesta </h2>
+        <p class="rate">4.2<i class="fa-solid fa-star"></i></p>
+        <p class="like"><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p class="des">colorful vegies,olive medley</p>
+        <p class="place">Rs220</p>
+        <button  class="order">order</button>
+        </div>
+
+    </div>
+
+    <div class="boxcard" onclick="changecolor(this);addToCart('hawaiin heaven', 530)";>
+        <img src="images/hawaipizza.png">
+        <div class="floatcon">
+            <p class="promo">promoted</p>
+            <p class="percent">50% OFF</p>
+            <p class="time">38min</p>
+        </div>
+        <div class="padd">
+        <div class="resrat">
+        <h2 class="restaurent">Hawaiian Haven</h2>
+        <p class="rate">4.9<i class="fa-solid fa-star"></i></p>
+        <p class="like"><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p class="des">touch of paradise</p>
+        <p class="place">Rs530</p>
+        <button  class="order">order</button>
+        </div>
+
+    </div>
+
+    <div class="boxcard" onclick="changecolor(this);addToCart('truffle mushroom', 510)";>
+        <img src="images/mush.png">
+        <div class="floatcon">
+            
+            <p class="percent">50% OFF</p>
+            <p class="time">20min</p>
+        </div>
+        <div class="padd">
+        <div class="resrat">
+        <h2 class="restaurent">Truffle Mushroom</h2>
+        <p class="rate">3.2<i class="fa-solid fa-star"></i></p>
+        <p class="like"><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p class="des"> Wild mushrooms, truffle oil</p>
+        <p class="place">Rs510</p>
+        <button  class="order">order</button>
+        </div>
+
+    </div>
+
+    <div class="boxcard" onclick="changecolor(this);addToCart('jalapeno burger', 540)";>
+        <img src="images/jalapenobur.png">
+        <div class="floatcon">
+            
+            <p class="percent">50% OFF</p>
+            <p class="time">45min</p>
+        </div>
+        <div class="padd">
+        <div class="resrat">
+        <h2 class="restaurent">Jalapeño Jack Joy</h2>
+        <p class="rate">4.0<i class="fa-solid fa-star"></i></p>
+        <p class="like"><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p class="des">Pepper jack cheese, jalapeños</p>
+        <p class="place">Rs540</p>
+        <button  class="order">order</button>
+        </div>
+
+    </div>
+    <div class="boxcard" onclick="changecolor(this);addToCart('Bonanza burger', 120)";>
+        <img src="images/bonanzabur.png">
+        <div class="floatcon">
+            <p class="promo">promoted</p>
+            <p class="percent">50% OFF</p>
+            <p class="time">45min</p>
+        </div>
+        <div class="padd">
+        <div class="resrat">
+        <h2 class="restaurent">Bonanza burger</h2>
+        <p class="rate">4.0<i class="fa-solid fa-star"></i></p>
+        <p class="like"><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p class="des">Juicy patty, lettuce</p>
+        <p class="place">Rs120</p>
+        <button  class="order">order</button>
+        </div>
+
+    </div>
+    <div class="boxcard" onclick="changecolor(this);addToCart('creme brule', 250)";>
+        <img src="images/cremebrule.png">
+        <div class="floatcon">
+            
+            <p class="percent">50% OFF</p>
+            <p class="time">45min</p>
+        </div>
+        <div class="padd">
+        <div class="resrat">
+        <h2 class="restaurent">Creme Brûlée Delight </h2>
+        <p class="rate">4.0<i class="fa-solid fa-star"></i></p>
+        <p class="like"><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p class="des">Silky vanilla custard</p>
+        <p class="place">Rs250</p>
+        <button  class="order">order</button>
+        </div>
+
+    </div>
+    <div class="boxcard" onclick="changecolor(this);addToCart('pana cotta', 300)";>
+        <img src="images/panacotta.png">
+        <div class="floatcon">
+            
+            <p class="percent">50% OFF</p>
+            <p class="time">45min</p>
+        </div>
+        <div class="padd">
+        <div class="resrat">
+        <h2 class="restaurent">Pistachio Panna Cotta</h2>
+        <p class="rate">4.0<i class="fa-solid fa-star"></i></p>
+        <p class="like"><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p class="des">pistachio-infused Italian</p>
+        <p class="place">Rs300</p>
+        <button  class="order">order</button>
+        </div>
+
+    </div>
+
+    <div class="boxcard" onclick="changecolor(this);addToCart('berry cheesecake', 320)";>
+        <img src="images/bluberrycheese.png">
+        <div class="floatcon">
+            <p class="promo">promoted</p>
+            <p class="percent">50% OFF</p>
+            <p class="time">30min</p>
+        </div>
+        <div class="padd">
+        <div class="resrat">
+        <h2 class="restaurent">Berry Cheesecake </h2>
+        <p class="rate">3.9<i class="fa-solid fa-star"></i></p>
+        <p class="like"><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p class="des">mixed berry compote.</p>
+        <p class="place">Rs320</p>
+        <button  class="order">order</button>
+        </div>
+
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- next is circle with rebiew popping out and then right u have reviewers about us section -->
+<section id="aboutus">
+<div class="about">
+        <h3>WHY US ??</h3>
+        <p class="ades">We serves the best in taste.our customer is our number 1 priority.See what othes think about us.</p>
+        <div class="fastdel">
+            <div class="fd">
+            <img src="images/deliver.png" class="del">
+            <h4>Fastest Delivery</h4>
+            </div>
+            <p>Rapid deliveries, ensuring your meal arrives promptly and enjoy ur meal till your hearts content</p>
+
+        </div>
+        <div class="fastdel">
+            <div class="fd">
+            <img src="images/cash.png" class="del">
+            <h4>best prices</h4>
+            </div>
+            <p>Affordable prices, saving you money on orders.more discounts available for regular customers</p>
+
+        </div>
+        <div class="fastdel">
+            <div class="fd">
+            <img src="images/burger.png" class="del">
+            <h4>10+ Restaurants </h4>
+            </div>
+            <p>Diverse options, with over 20 branches available and enjoy our foods</p>
+
+        </div>
+</div>
+
+</div>
+</section>
+
+<!-- frequently asked questions --> 
+<section id="faqsection">
+    <h1 class="sectiontitle">Frequently asked Questions</h1>
+    <div class="faq">
+        <div class="question-box">
+        <h3 class="question">How can I cancel my order ?</h3>
+        <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="answer-box">
+        <p class="answer"> To cancel your order, go to the "Order History" section in the app. Select the specific order you wish to cancel and follow the prompts to cancel your order. Please note that cancellation may only be possible within a certain timeframe after placing the order..</p>
+        </div>
+    </div>
+
+    <div class="faq">
+            <div class="question-box">
+            <h3 class="question">How can I contact my delivery person?</h3>
+            <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="answer-box">
+            <p class="answer"> You can easily contact the delivery person by tapping on the live tracking feature in the app. Once your order is out for delivery, you'll find an option to contact the delivery person directly. This ensures smooth communication and coordination for any specific delivery instructions or updates.</p>
+            </div>
+    </div>
+
+            <div class="faq">
+                <div class="question-box">
+                <h3 class="question">How can I change delivery address after order placement ?</h3>
+                <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer-box">
+                <p class="answer">To change your delivery address, navigate to the "My Account" or "Profile" section in the app. Select the order you wish to modify and find the option to edit the delivery address. Please make sure to update the address before the order is confirmed by the restaurant to avoid any issues.</p>
+                </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question-box">
+                    <h3 class="question">My payment is declining. What should I do?</h3>
+                    <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="answer-box">
+                    <p class="answer"> If your payment is declining, please double-check your payment details for accuracy, ensuring that the card information entered is current and valid. Additionally, contact your bank to confirm if there are any issues or restrictions on your card. If the problem persists, consider using an alternative payment method or reaching out to our customer support for assistance in resolving the payment decline.</p>
+                    </div>
+                    </div>
+</section>
+
+<section id="phoneapp">
+<div class="manage">
+    <h2 class="title">Explore the best experience by our mobile application.</h2>
+            <p>Make orders from
+                your phone
+                Get extra feature on app including tracking order, managing
+                account and much more.</p>
+            <div class="app">
+                <img src="images/icon-GooglePlay_1_zixjxl.webp" class="link" alt="">
+                <img src="images/icon-AppStore_lg30tv.webp" alt="" class="link">
+            </div>
+</div>
+
+
+
+</section>
+<!-- discount banner content -->
+
+<div class="discountbanner">
+    
+    <div class="sectiondetail">
+        <h1 class="title">Get an extra 20% off on your first order</h1>
+        <p class="sectioninfo">Use this code during checkout</p>
+        <p class="discountcode">WELCOME20</p>
+    </div>
+    <div class="dishes">
+        <img class="one" src="images/trufflemushroom.png">
+        <img class="two" src="images/pizza.png">
+        <img class="three" src="images/cremebrule.png">
+    </div>
+
+</div>
+<!-- footer content -->
+<section id="footer">
+    <div class="company-info">
+    <img src="images/logo.png" class="logo" alt="">
+    <div class="social-links">
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-discord"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="app">
+        <img src="images/icon-GooglePlay_1_zixjxl.webp" class="link" alt="">
+        <img src="images/icon-AppStore_lg30tv.webp" alt="" class="link">
+    </div>
+    </div>
+
+
+    <div class="useful-links footer-links-container">
+<h5 class="footer-links-title">Useful Links</h5>
+<a href="#" class="footer-links">Menu</a>
+<a href="#" class="footer-links">Restaurants</a>
+<a href="#" class="footer-links">Your Orders</a>
+<a href="#" class="footer-links">Track Order</a>
+<a href="#" class="footer-links">Support</a>
+</div>
+
+<div class="information footer-links-container">
+<h5 class="footer-links-title">information</h5>
+<a href="#" class="footer-links">About Us</a>
+<a href="#" class="footer-links">Privacy Policy</a>
+<a href="#" class="footer-links">Terms & Conditions</a>
+<a href="#" class="footer-links">What info we collect ?</a>
+</div>
+
+<div class="contact footer-links-container">
+    <h5 class="footer-links-title">Contact us</h5>
+    <p class="footer-text">Our main restaurant is located on Street 231, NYC</p>
+    <p class="footer-text">Phone +00 1234567890</p>
+    <p class="footer-text">Email - help@logo.com</p> 
+</div>
+
+<div class="payment-patners">
+    <img src="images/visa.png" alt="">
+    <img src="images/master-card.png" alt="">
+    <img src="images/paypal.png" alt="">
+    
+    <img src="images/apple-pay.png" alt="">
+    <img src="images/visa.png" alt="">
+    </div>
+    <p class="payment-patners-text">Fully secured payment gateways by trusted companies</p>
+    </section>
+
+    <!-- shopping cart popup image -->
+<div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button class="done" onclick="checkout()">done</button>
+</div>
+
+<!-- login page -->
+<div class="popup" id="loginPopup">
+    <div class="popup-content">
+        <span class="close" id="closeLogin">&times;</span>
+        <h2>Login</h2>
+    
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<script src="javascript.js"></script>
+<script src="cart.js"></script>
+
+</body>
+</html>

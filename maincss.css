@@ -1,0 +1,811 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'lato';
+    overflow-x:hidden;
+}
+@media only screen and (min-width: 100px) {
+.navbar{
+    position:fixed;
+    z-index: 1000;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color: rgb(218, 236, 236);
+}
+
+.nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav ul li{
+    display: inline-block;
+    margin-inline: 20px;
+    
+}
+.list li a{
+   
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding:5px 5px;
+    text-transform: capitalize;
+    transition: .2s;
+
+}
+.list li a:hover{
+    color:#004958;
+}
+.img{
+    padding:8px;
+    width:100px;
+    height:50px;
+    align-items: center;
+}
+.navextra{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+
+}
+.search{
+    height:30px;
+    display:flex;
+    cursor:pointer;
+    padding:10px 20px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.search:hover input{
+    width:250px;
+}
+.search input{
+    font-size: 17px;
+    width:0;
+    outline:none;
+    transition: .8s;
+    background: transparent;
+    border:none;
+    font-weight:500px
+}
+.search-btn i{
+    font-size: 18px;
+    color:#004958;
+    border: none;
+    border-radius: 50px;
+    padding:5px;
+    outline: none;
+}
+.search button{
+    background: none;
+    border:none;
+}
+/*main section*/
+#main{
+    padding:0 21px;
+    min-height:100vh;
+    display:flex;
+    width: 100%;
+
+    justify-content:space-around;
+    align-items: center;
+    background:azure;
+}
+
+.eat{
+    color:#004958;
+    font-size: 40px;
+    line-height: 5rem;
+    font-weight:700;
+}
+.maincontent{
+    width:35%;
+    margin-left:40px;
+}
+.explore{
+    line-height:2rem;
+    margin-top:20px;
+    color:grey;
+}
+.location{
+    background-color: white;
+    width:40%;
+    height:3rem;
+    align-items: center;
+    border:none;
+    justify-content:space-between;
+    display:flex;
+}
+.loc{
+    border:none;
+    font-size: 15px;
+    outline:none;
+    padding:10px;
+}
+.one-line{
+    display:flex;
+    padding-top:25px;
+    gap:10px;
+}
+.order{
+    background-color: #004958;
+    color:white;
+    padding: 10px;
+    border-radius: .3rem;;
+    font-size:1rem;
+    border:none;
+    cursor:pointer;
+    text-transform:capitalize ;
+
+}
+
+.order.transperant{
+    background: transparent;
+    color:#004958;
+    border:1px solid #004958;
+    
+}
+
+.or{
+    color: #004958;
+}
+.search-btn i:hover{
+    background-color:rgb(221, 218, 213);
+}
+/*side img content*/ 
+.sideimgs {
+    min-width:30rem;
+    min-height:30rem;
+    position:relative;
+    transform: scale(0.9) translateY(1rem);
+
+}
+.background-ele, .forgroundimg, .review{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+.elipse{
+    position:absolute;
+    height:100%;
+    top:50%;
+    left:50%;
+    border-radius:100%;
+    border:.01rem solid #004958;
+    transform-origin: center;
+}
+.elipse:nth-child(1)
+{
+    width:80%;
+    transform: translate(-50%,-50%) rotate(20deg);
+}
+.elipse:nth-child(2)
+{
+    width:90%;
+    transform: translate(-50%,-50%) rotate(40deg);
+}
+.elipse:nth-child(3)
+{
+    width:90%;
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+.foodimg{
+    position:absolute;
+    width:13rem;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5) ;
+    border-radius:50%;
+}
+.foodimg:nth-child(1){
+    width:18rem;
+    left:-8%;
+    top:-10%;
+}
+.foodimg:nth-child(2){
+    width:15rem;
+    right:-10%;
+    top:2%;
+}
+.foodimg:nth-child(3){
+    width:16rem;
+    left:35%;
+    bottom:-10%;
+}
+.review{
+    background:var(--alpha-primary-color);
+    width:25rem;
+    bottom:3%;
+    top:52%;
+    position:absolute;
+    left:-35%;
+    padding: 1rem 2rem;
+    height:220px;
+
+    border-radius: .5rem ;
+border: 1px solid gainsboro;
+background:var(--alpha-primary-color);
+    backdrop-filter: blur(.5rem);
+
+    
+
+}
+.person{
+    border-radius: 100%;
+    width:40px;
+    height:40px;
+    
+
+}
+.ratename{
+    align-items: center;
+}
+.imgname{
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+.descrip{
+    display: flex;
+    gap:20px;
+    padding: 0;
+    margin: 0;
+
+
+}
+.rating i{
+    color:rgb(194, 165, 19);
+}
+.descrip i{
+    color: #004958;
+   font-size: 40px;
+}
+.rev{
+    font-weight:500px;
+}
+/* section below header */
+
+#section{
+    position: relative;
+    padding:5rem 5rem;
+    width:100%;
+    gap:60px;
+
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    width:45%;
+     min-width:300px;
+     margin-left:auto;
+}
+.num{
+    font-size: 40px;
+}
+.chef{
+    background-color: #c4e1e5;
+    width:170px;
+    padding: 10px;
+}  
+.line{
+padding-bottom: 15px;
+} 
+/* left section circle creation */
+.imagesfoodcircle img{
+    width:400px;
+    margin-left:150px;
+    border-radius: 100%;
+    height:auto;
+    position: relative;
+    animation:rotate 13s linear infinite;
+    box-shadow: 10px rgba(0,0,0,0.9);
+
+}
+/* animation  */
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+/*six grids*/
+.display{
+    margin-left: 200px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+.rate i{
+    color:rgb(255, 153, 0)
+}
+.boxcard{
+    width:200px;
+    flex-basis: 25%;
+   /*  border:1px solid gray; */
+    border-radius: 10px;
+    position: relative;
+    
+    
+}
+.boxcard img{
+
+    width:100%;
+    height: 200px;
+    filter:grayscale(.4);
+    transition: .3s cubic-bezier(0.36, -0.21, 0.16, 1.97);
+    border-radius: 10px 10px 0 0;
+    position:relative;
+
+}
+.boxcard .order{
+    background-color:rgb(215, 215, 215);
+    color:black;
+    box-shadow: 5px 5px 5px rgb(197, 195, 195);
+    margin-top: 8px;
+    
+    padding:5px;
+    width:50%;
+    margin-left:60px;
+}
+.boxcard .order{
+    display: none;
+}
+.boxcard:hover .order{
+    display:block
+}
+
+.boxcard:hover img{
+    filter:grayscale(0);
+    transform: scale(1.1);
+}
+.promo{
+    background-color: brown;
+    display: inline;
+    position: absolute;
+    top:2px;
+    right:2%;
+    padding:4px;
+    opacity: .7;
+    color: white;
+    font-weight: 400;
+    border-radius: .5rem;
+}
+.percent{
+    background-color: brown;
+    
+    display: inline;
+    position: absolute;
+    top:0px;
+    font-weight:100;
+    left:-10px;
+    padding:4px;
+    color: white;
+    border-radius: .2rem;
+    
+}
+.time{
+    position: absolute;
+    background-color:rgb(170, 170, 170);
+    border-radius: .2rem;
+    padding:4px;
+    display: inline;
+    top: 160px;
+    right:6px;
+}
+.like i{
+    position: absolute;
+    border-radius: 100%;
+    display: inline;
+    background-color:white;
+    top:170px;
+    left:5px;
+    backdrop-filter: blur(10rem);
+    padding: 5px;
+
+}
+
+.resrat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.padd{
+    padding:5px 10px;
+    
+}
+.des{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+
+
+
+}
+.place{
+    font-size: 15px;
+    padding: 0;
+    font-weight: 600;
+}
+/* about us section why us
+ */
+#aboutus{
+    margin-top: 100px;
+    padding-bottom:0;
+    background-color:azure;
+   
+
+}
+
+ #aboutus::before{/* this makes the content to appear even after the background-color over but it is not working */ 
+   content:'';
+   
+   width:100%;
+   height:90%;
+   background-color: azure;
+   z-index:-1;
+   
+ }
+ .about{
+    width:60%;
+    min-width:250px;
+    margin:auto;
+    padding-top: 30px;
+ }
+ .about h3{
+    color: #004958;
+    
+ }
+ .ades{
+    margin-bottom: 20px;;
+    line-height:2rem;
+ }
+ .fastdel{
+    background-color: white;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    padding:1.5rem;
+
+    box-shadow: 0 .5rem 1rem  gainsboro;
+    margin-left:0;
+    margin-right: 20px;
+ }
+ .fd{
+    display: flex;
+    gap :1rem;
+    align-items: center;
+
+ }
+ .del{
+    width:3rem;
+    height:3rem;
+    border-radius: .2rem;
+ }
+/*  left side image with about us reviews  half circle rings */
+
+
+/* faq section */
+#faqsection{
+    margin-top: 200px;
+    
+    height: 140vh;
+}
+#faqsection h1{
+
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom:100px ;
+}
+.faq{
+    margin:auto;
+    width:60%;
+    border-radius: .5rem;
+    border:.1rem solid var(--accent-color);
+    margin-bottom: 32px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 2px 40px gainsboro;
+}
+.question-box{
+    display:flex;
+    gap:15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    cursor: pointer;
+}
+.question{
+    font-weight: 400;
+}
+.question-box i{
+    font-size: 1.5rem;
+    text-align: center;
+    transition: .25s;
+    color: #004958;
+}
+.answer-box{
+    display: grid;
+    grid-template-rows: 0fr; /* to make the desc hiddden */
+    transition: .5s;
+    border-top: .1rem solid var(--border-color);
+
+}
+.answer
+{
+    overflow: hidden;/* hide the answers */
+    line-height:2rem ;
+    padding:0 2rem;
+    
+}
+.faq.active .question-box i{
+    transform: rotate(45deg);
+}
+/* the active class is created by us in js ie it is created when we click the box that when it has active then show or hide the answer */
+.faq.active .answer-box
+{
+    grid-template-rows: 1fr;
+    padding:2rem 0;
+}
+
+#phoneapp{
+    width:100%;
+    background-color: azure;
+    height:100vh;
+    
+}
+.manage{
+    width:50%;
+    margin:auto;
+    padding-top: 200px;
+    text-align: center;
+    line-height: 4rem;
+}
+.manage h2{
+    font-size: 40px;
+}
+.manage p{
+    font-size: 20px;
+}
+.app img{
+    margin-right: 30px;
+}
+/* discount section */
+.discountbanner{
+position: relative;
+display: flex;
+margin: 0 10vw 5rem;
+padding: 4rem;
+border-radius: .5rem;
+background:linear-gradient(rgba(0, 118, 118, 0.8), rgba(0, 118, 118, 0.8)),url(images/pla.png) ;
+}
+.sectiondetail{
+    width:50%;
+    color: white;
+    line-height: 2rem;
+}
+.sectiondetail .sectioninfo{
+    margin: 10px 0;
+}
+.sectiondetail .discountcode{
+    padding: 10px;
+    background-color: aliceblue;
+    display: inline;
+    color: #004958;
+    
+    border-radius:.5rem;
+}
+.discountbanner .discountban{
+    position: relative;
+}
+.discountbanner .dishes img{
+    
+    position: absolute;
+
+}
+.dishes .one{
+    width:250px;
+    height:200px;
+    border-radius: .5rem;
+  bottom: 33px;
+    margin-left: 90px;
+    
+}
+.dishes .two{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+ 
+    right: -5%;
+    top:-8px;
+    
+}
+.dishes .three{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+ 
+    right:0;
+    bottom:0;
+    
+}
+/* footor contetn */
+#footer {
+    position: relative;
+    padding: 4rem 10vw 8rem;
+    display: flex;
+    gap: 5%;
+    background: azure;
+}
+.company-info .logo{
+        height: 3rem;
+        margin-bottom: 2rem;
+}
+.social-links{
+        display: flex;
+        gap: 1rem;
+}
+.social-links a{
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+    border-radius: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #004958;
+    font-size: 1.5rem;
+    transition: .5s;
+}
+#footer .app img{
+    width: 8rem;
+    margin-top: 20px;
+} 
+.footer-links-container{
+margin-left: auto;
+}
+.footer-links-container.contact{
+    width: 20%;
+    }
+.footer-links-title{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    color: #004958
+}
+.footer-links, .footer-text{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    margin-bottom: .5rem;
+    line-height: 1.5em;
+    display: block;
+    opacity: 0.75;
+    text-transform: capitalize;
+}
+.footer-links:hover{
+    opacity: 1;
+    color: #004958;
+}
+.footer-text{
+    margin-bottom: 1rem;
+}
+.payment-patners {
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    right: 10vw;
+    bottom: 20%;
+    }
+.payment-patners img{
+    height: 2rem;
+}
+.payment-patners-text{
+    position: absolute;
+    bottom: 12%;
+    right: 10vw;
+    font-size: .8rem;
+    opacity: 0.5;
+}
+/* the shoppng cart popup page */
+#cart {
+    width:600px;
+    line-height:30px ;
+
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    border-radius: .5rem ;
+border: 1px solid gainsboro;
+background:var(--alpha-primary-color);
+    backdrop-filter: blur(.5rem);
+   text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+.done{
+    color:black;
+    background-color:white;
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+/* login page design */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid gainsboro;
+background:var(--alpha-primary-color);
+    backdrop-filter: blur(2rem);
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup-content {
+    width: 300px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #6d6b6b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a8989;
+}
+
+
+
+}
